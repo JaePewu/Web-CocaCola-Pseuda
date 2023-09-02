@@ -40,6 +40,12 @@ header .container nav a {
   margin: 15px;
 }
 
+footer {
+  padding: 15px 0;
+  background-color: black;
+  color: white;
+}
+
 .btn {
   text-align: center;
   padding: 15px 20px;
