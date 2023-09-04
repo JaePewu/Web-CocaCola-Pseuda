@@ -45,6 +45,10 @@ header .container nav a:hover {
   color: black;
 }
 
+header .container .hamb {
+  display: none;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -354,10 +358,58 @@ footer .redes-sociales a {
   margin-bottom: 0;
 }
 
-/* #contactenos .bloque-contactenos {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-} */
+/*Medias Queries */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  header .container nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; /*sirve para dejar el contenido alineado a la izquierda y se muestre en la parte de arriba */
+    transition: all 0.3s ease; /*sirve para que el cambio de la transicion sea mas suave  */
+    transform: translateX(100%); /*sirve para que desaparezca el menu */
+  }
+
+  header .container nav a {
+    font-size: 30px;
+    margin: 15px 0;
+  }
+
+  header .container .hamb {
+    display: block;
+    font-size: 40px;
+    color: red;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .columna-mobile-100 {
+    width: 100%;
+  }
+
+  .columna-mobile-50 {
+    width: 50%;
+  }
+
+  #inicio {
+    height: 100vh;
+  }
+
+  #inicio img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
